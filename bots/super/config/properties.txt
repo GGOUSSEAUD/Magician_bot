@@ -1,0 +1,9 @@
+url:http://www.alicebot.org
+name: Gaston
+email:callmom-info@pandorabots.com
+gender:male
+botmaster:Le grand Gaëtan!
+organization:ALICE AI Foundation
+version:0.0.4
+magasin:X
+

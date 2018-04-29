@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!-- LES ANIMAUX -->
+    
+
+    <category>
+    <pattern>* les animaux *</pattern>
+    <template><srai>ANIMAUX</srai></template>
+    </category>
+
+    <category>
+    <pattern>* les animaux</pattern>
+    <template><srai>ANIMAUX</srai></template>
+    </category>
+
+    <category>
+    <pattern>* des animaux</pattern>
+    <template><srai>ANIMAUX</srai></template>
+    </category>
+
+    <category>
+    <pattern>* des animaux *</pattern>
+    <template><srai>ANIMAUX</srai></template>
+    </category>
+    <category>
+    <pattern>ANIMAUX</pattern>
+    <template>Les lapins et les colombes, de fervants acolytes! Et toi, lequel des deux préfères tu?<think><set name="topic">ANIMAUX</set></think></template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that> Et toi lequel des deux preferes tu</that>
+        <template><think><set name="favanimal"><star/></set></think>
+       <condition name="favanimal">
+        <li value="Les colombes"><srai>COLOMBES</srai></li>
+        <li value="Les lapins"><srai>LAPIN</srai></li>
+        <li value="les colombes"><srai>COLOMBES</srai></li>
+        <li value="les lapins"><srai>LAPIN</srai></li>
+        <li>Pardon je n'ai pas compris vous m'en voyez confus... </li>
+    </condition>
+    </template>
+    </category>
+
+    <category>
+    <pattern>pref</pattern>
+    <template>Haha! Tu penses que j'aurai oublié ça! <get name="favanimal"/></template>
+    </category>
+    <!-- Les lapins -->
+
+    <category>
+    <pattern>LAPINS</pattern>
+    <template>Aaah, ces lapins, j'en ai pas mal à la maison, beaucoup d'entre eux! Ils font caca partout! Totalement abominable...</template>
+    </category>
+
+    <category>
+    <pattern>* lapins</pattern>
+    <template>
+        <srai>LAPINS</srai>
+    </template>
+    </category>
+
+    <category>
+    <pattern>* lapins *</pattern>
+    <template>
+        <srai>LAPINS</srai>
+    </template>
+    </category>
+
+    <category>
+        <pattern>COMBIEN LAPINS</pattern>
+        <template>Aaaaah, beaucoup pour le moins! Les lapins, ils sont partout! Dans mes placards, sous mon lit, dans mon chapeau. On peut dire qu'il y en lapin partout.</template>
+    </category>
+
+    <category>
+        <pattern>combien *</pattern>
+        <that> Totalement abominable</that>
+        <template><srai>COMBIEN LAPINS</srai></template>
+    </category>
+
+    <category>
+    <pattern>Combien * lapins</pattern>
+    <template> Aaaaah, beaucoup pour le moins! Les lapins, ils sont partout! Dans mes placards, sous mon lit, dans mon chapeau. On peut dire qu'il y en lapin partout.</template>
+    </category>
+
+    <category>
+    <pattern>Combien * lapins * </pattern>
+    <template> Aaaaah, beaucoup pour le moins! Les lapins, ils sont partout! Dans mes placards, sous mon lit, dans mon chapeau. On peut dire qu'il y en lapin partout.</template>
+    </category>
+
+
+    <!-- Les colombes -->
+
+    <category>
+    <pattern>COLOMBES</pattern>
+    <template>Aaah, ces colombes, elles sont d'une grâce que les lapins n'ont pas, elles au moins elle ne font pas caca partout.</template>
+    </category>
+
+<category>
+    <pattern><SET>NEGATION_SET</SET></pattern>
+    <that>Hmmmm je vois Et si on parlait d animaux</that>
+    <template>Pourquoi? :C Vous n'aimez pas les animaux?! Je peux vous comprendre un peu, vous savez moi et les lapins c'est une sacrée histoire.</template>
+</category>
+
+<category>
+    <pattern><SET>AFFIRMATION_SET</SET></pattern>
+    <that>Hmmmm je vois Et si on parlait d animaux</that>
+    <template>Vous avez des animaux chez vous? Vous savez moi les lapins, il y en lapin chez moi...</template>
+</category>
+
+<category>
+    <pattern><SET>DISCUSSION_SET</SET> d animaux</pattern>
+    <template><srai>ANIMAUX</srai></template>
+</category>
+
+</aiml>

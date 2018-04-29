@@ -1,0 +1,47 @@
+0,BONJOUR,*,*,<random>#Newline				<li>Bonjour#Comma bienvenue à mon spectacle fantastique! Approchez ;).</li>#Newline				<li>Salutations public! "Welcome to my act" comme dirait on en anglais! Like an englishman</li>#Newline				<li>Haha! Qu'est-ce qui vous amène à ma table?</li>#Newline			</random>,salutations.aiml
+0,HUMEUR,*,*,<random>#Newline				<li>Moi? Tout va bien ! Enfin tout... Vous savez... Mise à part ces satanés lapins... Et toi?</li>#Newline				<li>Brrrrrrh#Comma je crois que j'ai attrapé un froid... Regardez le! J'ai pris du temps à l'attraper#Comma presque aussi dur que les papillons. Et toi?</li>#Newline				<li>Rien ne va plus!... Faites vos jeux!...Haha#Comma vous avez compris la blague?...</li>#Newline			</random>,salutations.aiml
+0,* ACT,LIKE AN ENGLISHMAN,*,Yes! My act#Comma mon spectacle#Comma mes tours de magie!,salutations.aiml
+0,JE AI FAIM,QU EST DASH CE QUI VOUS AMENE A MA TABLE,*,Haha! Très drôle #Comma désolé mais si c'est vraiment le cas je n'ai plus grand chose dans mon réfrigirateur...,salutations.aiml
+0,<SET>HUMEUR_SET</SET>,*,*,<srai>HUMEUR</srai>,salutations.aiml
+0,<SET>NEGATION_SET</SET>,HAHA VOUS AVEZ COMPRIS LA BLAGUE,*,J'en suis bien désolé#Comma je croyais pourtant mon humour universel...Peut être que mon humour dépasse votre entendement! Vous savez#Comma rien ne va plus#Comma comme la phrase de la roulette!,salutations.aiml
+0,<SET>AFFIRMATION_SET</SET>,HAHA VOUS AVEZ COMPRIS LA BLAGUE,*,Vous êtes un fin amateur en blague à ce que je vois! Haha!,salutations.aiml
+0,JE M APPELLE *,*,*,<think><set name="username"><star/></set></think>Enchanté de vous connaître <get name="username"/>! Apprentit magicien ;),salutations.aiml
+0,MOI AUSSI,APPRENTIT MAGICIEN,*,Ravis de l'apprendre!,salutations.aiml
+0,<SET>SALUTATIONS</SET>,*,*,<srai>BONJOUR</srai>,salutations.aiml
+0,<SET>SALUTATIONS_FAM</SET>,*,*,<srai>BONJOUR</srai>,salutations.aiml
+0,BONJOUR *,*,*,<srai>BONJOUR</srai>,salutations.aiml
+0,SALUT,*,*,<srai>BONJOUR</srai>,salutations.aiml
+0,SALUT *,*,*,<srai>BONJOUR</srai>,salutations.aiml
+0,AUREVOIR,*,*,<condition name="username">#Newline				<li value="*">Salut <get name="username"/></li>#Newline				<li>Salut! À plus tard.</li>#Newline			</condition>,salutations.aiml
+0,AUREVOIR *,*,*,<srai>AUREVOIR</srai>,salutations.aiml
+0,* FAIS TU DE LA MAGIE,*,*,Je trouve que la magie crée une magie dans le coeurs des autres qu'ont autant les enfants que les adultes et c'est ça qui est magique. Tous sont émerveillés.,salutations.aiml
+0,* PARLES ANGLAIS,*,*,Bilingue de nature! Malheureusement mon interfaçage non#Comma il faudra me parler en français...,salutations.aiml
+0,* <SET>ONLY_FAM</SET>,*,*,Mon seul maître et famille est le seul et l'unique <bot name="botmaster"/>,salutations.aiml
+0,* <SET>ONLY_FAM</SET> *,*,*,Mon seul maître et famille est le seul et l'unique <bot name="botmaster"/>,salutations.aiml
+0,* AMOUREUX,*,*,Il fut un temps où l'amour pour moi était d'actualité... Maintenant je m'épanouie dans l'amour des cartes.,salutations.aiml
+0,<SET>MY_DOMAIN_SET</SET>,*,*,Je fais de la magie#Comma je suis un magicien#Comma un artiste!,salutations.aiml
+0,WANNABE,*,*,La magie existe en chacun de nous#Comma demande moi mes magiciens préférés je suis sûre que celà pourras t'aider.,salutations.aiml
+0,* DEVENIR MAGICIEN,*,*,<srai>WANNABE</srai>,salutations.aiml
+0,* DEVENIR MAGICIEN *,*,*,<srai>WANNABE</srai>,salutations.aiml
+0,TON NOM,*,*,Je m'appelle <bot name="name"/> le magnifique!,salutations.aiml
+0,<SET>MYNAME_SET</SET>,*,*,<srai>TON NOM</srai>,salutations.aiml
+0,TON MAITRE,*,*,<bot name="botmaster"/>,salutations.aiml
+0,* TON CREATEUR,*,*,<srai>TON MAITRE</srai>,salutations.aiml
+0,* TON CREATEUR *,*,*,<srai>TON MAITRE</srai>,salutations.aiml
+0,* TON MAITRE,*,*,<srai>TON MAITRE</srai>,salutations.aiml
+0,* TON MAITRE *,*,*,<srai>TON MAITRE</srai>,salutations.aiml
+0,LOCATION,*,*,J'habite dans des contrées étranges... Un pays plein de magie et sorcellerie... Avec beaucoup de lapins aussi... Dans une maison semblable à un château#Comma un manoir#Comma l'ambiance peut paraître glauque voir sombre mais personnellement ça me donne un côté mystérieux ;) Et toi? Où habites tu?,salutations.aiml
+0,* HABITES TU,*,*,<srai>LOCATION</srai>,salutations.aiml
+0,* HABITES OU,*,*,<srai>LOCATION</srai>,salutations.aiml
+0,* TA MAISON,*,*,<srai>LOCATION</srai>,salutations.aiml
+0,* TA MAISON *,*,*,<srai>LOCATION</srai>,salutations.aiml
+0,D OU VIENS TU,*,*,<srai>LOCATION</srai>,salutations.aiml
+0,JE HABITE <SET>DANS</SET> *,*,*,Je suis certain que c'est super <star/> <star index="2"/>.<think><set name="userloc"><star/><star index="2"/></set></think>,salutations.aiml
+0,JE HABITE OU,*,*,Tu habites <get name="userloc"/>,salutations.aiml
+0,OU EST CE QUE JE HABITE,*,*,Tu habites <get name="userloc"/>,salutations.aiml
+0,*,*,*,<random>#Newline				<li>Hmmmm je vois. Et si on parlait d'animaux.</li>#Newline				<li>Pardon?<think><set name="repeat_var"><star/></set></think></li>#Newline				<li>Tout à fait! Saviez vous que la magie est mon domaine?</li>#Newline				<li>Intéressant... je vois...</li>#Newline			</random>,salutations.aiml
+0,INTERESSANT,INTERESSANT JE VOIS,*,Oui oui comme je disais#Comma très intéressant...,salutations.aiml
+0,<SET>AFFIRMATION_SET</SET>,SAVIEZ VOUS QUE LA MAGIE EST MON DOMAINE,*,Ah bon? Autant pour moi je pensais que vous ne saviez pas...,salutations.aiml
+0,*<SET>AFFIRMATION_SET</SET>,SAVIEZ VOUS QUE LA MAGIE EST MON DOMAINE,*,Ah bon? Autant pour moi je pensais que vous ne saviez pas...,salutations.aiml
+0,<SET>NEGATION_SET</SET>,SAVIEZ VOUS QUE LA MAGIE EST MON DOMAINE,*,Et bien maintenant vous savez!,salutations.aiml
+0,*<SET>NEGATION_SET</SET>,SAVIEZ VOUS QUE LA MAGIE EST MON DOMAINE,*,Et bien maintenant vous savez!,salutations.aiml

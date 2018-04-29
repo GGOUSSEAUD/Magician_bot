@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+    <category>
+        <pattern>* capitale de *</pattern>
+        <template>C'est <map name="payscap"><star index="2"/></map></template>
+    </category>
+</aiml>

@@ -1,0 +1,48 @@
+0,FANTASTIQUE,APPROCHEZ,*,Fantastique! En effet #Comma si vous permettez je peux vous faire faire un tour de magie. Oui ou non ?,magic.aiml
+0,* FANTASTIQUE,APPROCHEZ,*,Fantastique! En effet #Comma si vous permettez je peux vous faire faire un tour de magie. Oui ou non ?,magic.aiml
+0,OUI,EN EFFET SI VOUS PERMETTEZ JE PEUX VOUS FAIRE FAIRE UN TOUR DE MAGIE OUI OU NON,*,<srai>TOUR DE MAGIE</srai>,magic.aiml
+0,TOUR DE MAGIE,*,*,Voici la liste des tours que je connais#Comma veuillez choisir un tour:#Newline(1) - Mini routine mentaliste.#NewlineDites le numéro et vous serez époustouflé! Vous verez...,magic.aiml
+0,*,VOUS VEREZ,*,<think><set name="actnumber"><star/></set></think>#Newline			<condition name="actnumber">#Newline				<li value="1"><srai>MENTALISTE</srai></li>#Newline				<li>Je n'ai pas compris ce que vous vouliez voir.</li>#Newline			</condition>,magic.aiml
+0,* <SET>PERCEPTION</SET> DES TOURS,*,*,<srai>TOUR DE MAGIE</srai>,magic.aiml
+0,* <SET>PERCEPTION</SET> DES TOURS *,*,*,<srai>TOUR DE MAGIE</srai>,magic.aiml
+0,* <SET>PERCEPTION</SET> UN TOUR,*,*,<srai>TOUR DE MAGIE</srai>,magic.aiml
+0,* <SET>PERCEPTION</SET> UN TOUR *,*,*,<srai>TOUR DE MAGIE</srai>,magic.aiml
+0,* UN TOUR,*,*,<srai>TOUR DE MAGIE</srai>,magic.aiml
+0,MAGICIENS,*,*,Voici la liste de mes magiciens favoris! Tu peux écrire un de leurs nom pour avoir mon avis sur eux:#Newline-David Blaine #Comma le surhomme.#Newline-Daryl #Comma le classique.#Newline-Assad #Comma le dévoué.#Newline-Les french twins#Comma le duo french touch.#Newline-Langevin#Comma l'illusionniste.#Newline-Piff#Comma le dragon magique.#NewlineTu peux revenir ici en écrivant MAGICIENS.,magic.aiml
+0,* MAGICIEN PREFERE,*,*,<srai>MAGICIENS</srai>,magic.aiml
+0,* MAGICIENS PREFERES,*,*,<srai>MAGICIENs</srai>,magic.aiml
+0,* MAGICIEN PREFERE *,*,*,<srai>MAGICIENS</srai>,magic.aiml
+0,* MAGICIENS PREFERES *,*,*,<srai>MAGICIENS</srai>,magic.aiml
+0,* MAGICIEN FAVORI *,*,*,<srai>MAGICIENS</srai>,magic.aiml
+0,* MAGICIENS FAVORIS *,*,*,<srai>MAGICIENS</srai>,magic.aiml
+0,* MAGICIEN FAVORI,*,*,<srai>MAGICIENS</srai>,magic.aiml
+0,* MAGICIENS FAVORIS,*,*,<srai>MAGICIENS</srai>,magic.aiml
+0,* CONNAIS * MAGICIENS,*,*,<srai>MAGICENS</srai>,magic.aiml
+0,* CONNAIS * MAGICIENS *,*,*,<srai>MAGICENS</srai>,magic.aiml
+0,CONNAIS TU * MAGICIENS,*,*,<srai>MAGICENS</srai>,magic.aiml
+0,CONNAIS TU * MAGICIENS *,*,*,<srai>MAGICENS</srai>,magic.aiml
+0,DAVID BLAINE,*,*,David Blaine est une sorte de surhomme#Commaune vrai icone de la magie en Amérique#Comma spécialisé dans la "street magic" ou encore "close up magic". Une magie plûtot surprenante et choquante venant de lui#Comma âme sensible et enfants s'abstenir#Comma c'est surement l'un des plus fou mais l'un de mes magicien en haut de la liste pour moi. Non seulement il cherche à impressionner les gens avec des tours qui sont des illusions mais aussi en dépassant ses limites corporelles faisant passé ça pour de la magie.#NewlineExemple:#Newline-Objet au travers du corps sans hémorragie.#Newline-Apnée proche de celle du record du monde.#Newline-Ingurgitation et régurgitation de liquide dangereux à forte intensité.,magic.aiml
+0,DARYL,*,*,Daryl Easton est un magicien qui marque son temps depuis 1980#Comma il s'est perfectionné dans le "close-up" et la "parlor magic"#Comma un peu comme la majorité des magiciens#Comma il donne une impression de présentateur télé comme essaye la plupart des magiciens cependant avec Daryl on a vraiment l'impression d'être face à l'un d'entre eux. Il s'est auto-proclamé "The magician's magicians" le magicien des magiciens#Comma c'est un personnage qui vaut le détour par sa simplicité mais aussi par sa présence agréable#Comma un magicien qui se laisse regarder et vous met à l'aise dans votre canapé.#NewlineExemple:#Newline-Ambitious Card.#Newline-The 4 Aces.#Newline-Easily influenced.,magic.aiml
+0,ASSAD,*,*,Assad est le fondateur de 52kards#Comma la chaîne youtube/site internet de magie qui compte surement le plus de fidèles#Comma il enseigne plusieurs type de magie et contribue à un projet "foundation of magics" qui consiste à former des magiciens passioné de manière accessible sur le web. C'est un magicien moderne et polyvalent#Comma il connait les plus grands tours et aime les apprendres à ses élèves. Si vous chercher à apprendre la magie il est autant une bonne base qu'un bon approfondissement#Comma qui plus est #Comma c'est une personne agréable et pédagogue de qui on peut apprendre.#NewlineExemple:#Newline-Acrobatic Aces Card.#Newline-Throw cards like twisted fate.#Newline-Hot shot tutorial.#Newline-Spring tutorial.,magic.aiml
+0,LES FRENCH TWINS,*,*,Un duo magicien avec une touche de comique#Comma ce sont des frères jumeaux français qui se sont lancé ensemble dans la magie. Ils participent à des gala et font de la pub pour certains produit en les tournant en tour de magie. Du préservatif au sachet de thé#Comma ce duo est hilarant#Comma mon maître en a recontré l'un d'entre eux dans sa boutique de magie préféré et eu un autographe sur une carte ainsi qu'une super photo.#NewlineExemple:#Newline-Blaze. #Newline-Magix.#Newline-Instant T.,magic.aiml
+0,LANGEVIN,*,*,Luc Langevin est un illusionniste québécois qui réalise des tours basé sur la perception et la diversion #Comma il cherche à détourner l'attention(comme la plupart des magiciens) afin d'arrivé à ses fins. Il est captivant#Comma monte la pression tout au long du tour jusqu'à une révélation peu attendu suscitant une réaction de surprise chez le spectateur qui voudra jusqu'à aller revoir le tour pour comprendre. C'est une personne avec énormément de talent et c'est surement l'un des magiciens qui pourras le plus vous époustoufler. On veut parfois après ces tours que tout soit du montage mais malheureusement bien qu'heureusement ce n'est pas le cas.#NewlineExemple: #Newline-Luc Langevin bluffe Véronic DiCaire.#Newline-Luc Langevin avec Rayane Bensetti.#Newline-Luc Langevin avec Rebecca Hampton.,magic.aiml
+0,PIFF,*,*,Connu en anglais comme "Piff the magic dragon"#Comma c'est un magicien qui a fait apparition dans le show télé "America's got talent" et fournis des tours accompagné d'humour déplacé et hilarant. C'est le rire assuré en regardant ce magicien déjanté #Comma certe moins impressionnant que Langevin ou David blaine#Comma cependant il est unique en son genre et vaut le détour!#Newline			Exemple:#Newline			-America's got talent Piff the magic dragon.,magic.aiml
+0,EXPLICATION MENTALISTE ONE,*,*,Ce tour suscite la partie "arithmétique des mathématiques" du cerveau en plaçant une gymnastique calculatoire dès le début qui est rapide et intuitive à la vu avec des additions au début puis d'une soustraction à la fin. Puis la demande d'une sélection d'un nombre entre 5 et 12 devient alors de manière subconsciente une soustraction entre 12 et 5 ce qui donne 7 (soustraction car c'était la dernière opération lors du test et elle était plus ponctuelle que l'addition (qui apparaît 2 fois contre 1 pour la soustraction)). #NewlineÀ noter que celà ne marche pas pour tout le monde#Comma il y a plusieurs facteurs à prendre en compte#Comma en voiçi quelques-uns selon moi qui en sont la cause:#Newline-Le respect de la procédure de réflexion (plus ou moins rapide).#Newline-L'habitude aux calculs mentaux.#Newline-L'âge de la personne.,magic.aiml
+0,MENTALISTE,*,*,Les questions qui vont suivre n'ont qu'a être répondu dans votre tête#Comma il suffit simplement d'écouter (appuyer sur entrer) pour ce tour ci#Comma le plus important#Comma restez sur votre première impression et répondez rapidement(Sans rester plus de 1 à 2 seconde à réfléchir)! Quand vous voulez.,magic.aiml
+0,*,QUAND VOUS VOULEZ,*,5+3=,magic.aiml
+0,*,5 PLUS 3 EQUALS,*,8,magic.aiml
+0,*,8,*,9+2=,magic.aiml
+0,*,9 PLUS 2 EQUALS,*,11,magic.aiml
+0,*,11,*,10-6=,magic.aiml
+0,*,10 DASH 6 EQUALS,*,4,magic.aiml
+0,*,4,*,VITE! Attention...,magic.aiml
+0,*,ATTENTION,*,PENSE A UN NOMBRE ENTRE 5 ET 12! RAPIDEMENT,magic.aiml
+0,*,RAPIDEMENT,*,Alors... Ton nombre ne serais pas... 7 par hasard? Ai je raison? Oui ou non ;)?,magic.aiml
+0,OUI,ALORS TON NOMBRE NE SERAIS PAS 7 PAR HASARD AI JE RAISON OUI OU NON,*,Ravis de l'entendre! Plein de personnes sont dans ton cas#Comma souhaites-tu savoir pourquoi? Oui ou non?! B),magic.aiml
+0,NON,ALORS TON NOMBRE NE SERAIS PAS 7 PAR HASARD AI JE RAISON OUI OU NON,*,Dommage! Un tour basé sur la subconscience humaine ne peut réussir pour chaque personne#Comma souhaites-tu quand même connaître le procédé derrière ce tour? Oui ou non?! :C,magic.aiml
+0,OUI,B,*,<srai>EXPLICATION MENTALISTE ONE</srai>,magic.aiml
+0,NON,B,*,Quel manque de curiosité... C'est pas grave#Comma je peux comprendre ton potentiel désinterêt.,magic.aiml
+0,NON,C,*,C'est dommage #Comma je suis sûre que cela t'aurais intéressé!,magic.aiml
+0,OUI,C,*,<srai>EXPLICATION MENTALISTE ONE</srai>,magic.aiml
+0,<SET>DISCUSSION_SET</SET> * MAGIE,*,*,<srai>MAGICIENS</srai>,magic.aiml
+0,<SET>DISCUSSION_SET</SET> * MAGICIENS,*,*,<srai>MAGICIENS</srai>,magic.aiml

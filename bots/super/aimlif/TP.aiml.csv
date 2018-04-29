@@ -1,0 +1,1 @@
+0,* DANS LE MAGASIN *,*,*,<think><set name="magasin"><star index="2"/></set></think>#Newline		<condition name="magasin">#Newline		<li value="A">Vêtements pour FEMME</li>#Newline		<li value="B">Vëtements pour HOMME</li>#Newline		<li> Désolé mais ce magasin est vide.</li>#Newline	</condition>,TP.aiml

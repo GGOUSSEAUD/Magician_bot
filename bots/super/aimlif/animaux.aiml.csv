@@ -1,0 +1,18 @@
+0,* LES ANIMAUX *,*,*,<srai>ANIMAUX</srai>,animaux.aiml
+0,* LES ANIMAUX,*,*,<srai>ANIMAUX</srai>,animaux.aiml
+0,* DES ANIMAUX,*,*,<srai>ANIMAUX</srai>,animaux.aiml
+0,* DES ANIMAUX *,*,*,<srai>ANIMAUX</srai>,animaux.aiml
+0,ANIMAUX,*,*,Les lapins et les colombes#Comma de fervants acolytes! Et toi#Comma lequel des deux préfères tu?<think><set name="topic">ANIMAUX</set></think>,animaux.aiml
+0,*,ET TOI LEQUEL DES DEUX PREFERES TU,*,<think><set name="favanimal"><star/></set></think>#Newline       <condition name="favanimal">#Newline        <li value="Les colombes"><srai>COLOMBES</srai></li>#Newline        <li value="Les lapins"><srai>LAPIN</srai></li>#Newline        <li value="les colombes"><srai>COLOMBES</srai></li>#Newline        <li value="les lapins"><srai>LAPIN</srai></li>#Newline        <li>Pardon je n'ai pas compris vous m'en voyez confus... </li>#Newline    </condition>,animaux.aiml
+0,PREF,*,*,Haha! Tu penses que j'aurai oublié ça! <get name="favanimal"/>,animaux.aiml
+0,LAPINS,*,*,Aaah#Comma ces lapins#Comma j'en ai pas mal à la maison#Comma beaucoup d'entre eux! Ils font caca partout! Totalement abominable...,animaux.aiml
+0,* LAPINS,*,*,<srai>LAPINS</srai>,animaux.aiml
+0,* LAPINS *,*,*,<srai>LAPINS</srai>,animaux.aiml
+0,COMBIEN LAPINS,*,*,Aaaaah#Comma beaucoup pour le moins! Les lapins#Comma ils sont partout! Dans mes placards#Comma sous mon lit#Comma dans mon chapeau. On peut dire qu'il y en lapin partout.,animaux.aiml
+0,COMBIEN *,TOTALEMENT ABOMINABLE,*,<srai>COMBIEN LAPINS</srai>,animaux.aiml
+0,COMBIEN * LAPINS,*,*,Aaaaah#Comma beaucoup pour le moins! Les lapins#Comma ils sont partout! Dans mes placards#Comma sous mon lit#Comma dans mon chapeau. On peut dire qu'il y en lapin partout.,animaux.aiml
+0,COMBIEN * LAPINS *,*,*,Aaaaah#Comma beaucoup pour le moins! Les lapins#Comma ils sont partout! Dans mes placards#Comma sous mon lit#Comma dans mon chapeau. On peut dire qu'il y en lapin partout.,animaux.aiml
+0,COLOMBES,*,*,Aaah#Comma ces colombes#Comma elles sont d'une grâce que les lapins n'ont pas#Comma elles au moins elle ne font pas caca partout.,animaux.aiml
+0,<SET>NEGATION_SET</SET>,HMMMM JE VOIS ET SI ON PARLAIT D ANIMAUX,*,Pourquoi? :C Vous n'aimez pas les animaux?! Je peux vous comprendre un peu#Comma vous savez moi et les lapins c'est une sacrée histoire.,animaux.aiml
+0,<SET>AFFIRMATION_SET</SET>,HMMMM JE VOIS ET SI ON PARLAIT D ANIMAUX,*,Vous avez des animaux chez vous? Vous savez moi les lapins#Comma il y en lapin chez moi...,animaux.aiml
+0,<SET>DISCUSSION_SET</SET> D ANIMAUX,*,*,<srai>ANIMAUX</srai>,animaux.aiml

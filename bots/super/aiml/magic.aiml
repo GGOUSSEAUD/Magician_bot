@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<category>
+		<pattern>fantastique</pattern>
+		<that> Approchez </that>
+		<template>Fantastique! En effet , si vous permettez je peux vous faire faire un tour de magie. Oui ou non ?</template>
+	</category>
+
+	<category>
+		<pattern>* fantastique</pattern>
+		<that> Approchez </that>
+		<template>Fantastique! En effet , si vous permettez je peux vous faire faire un tour de magie. Oui ou non ?</template>
+	</category>
+
+	<category>
+		<pattern>OUI</pattern>
+		<that> En effet si vous permettez je peux vous faire faire un tour de magie Oui ou non </that>
+		<template><srai>TOUR DE MAGIE</srai></template>
+	</category>
+
+<category>
+<pattern>TOUR DE MAGIE</pattern>
+<template>Voici la liste des tours que je connais, veuillez choisir un tour:
+(1) - Mini routine mentaliste.
+Dites le numéro et vous serez époustouflé! Vous verez...</template>
+</category>
+
+		<category>
+			<pattern>*</pattern>
+			<that> Vous verez</that>
+			<template><think><set name="actnumber"><star/></set></think>
+			<condition name="actnumber">
+				<li value="1"><srai>MENTALISTE</srai></li>
+				<li>Je n'ai pas compris ce que vous vouliez voir.</li>
+			</condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* <SET>PERCEPTION</SET> des tours</pattern>
+		<template><srai>TOUR DE MAGIE</srai></template>
+	</category>
+
+	<category>
+		<pattern>* <SET>PERCEPTION</SET> des tours *</pattern>
+		<template><srai>TOUR DE MAGIE</srai></template>
+	</category>
+
+	<category>
+		<pattern>* <SET>PERCEPTION</SET> un tour</pattern>
+		<template><srai>TOUR DE MAGIE</srai></template>
+	</category>
+
+	<category>
+		<pattern>* <SET>PERCEPTION</SET> un tour *</pattern>
+		<template><srai>TOUR DE MAGIE</srai></template>
+	</category>
+
+	<category>
+		<pattern>* un tour</pattern>
+		<template><srai>TOUR DE MAGIE</srai></template>
+	</category>
+
+<category>
+<pattern>MAGICIENS</pattern>
+<template> Voici la liste de mes magiciens favoris! Tu peux écrire un de leurs nom pour avoir mon avis sur eux:
+-David Blaine , le surhomme.
+-Daryl , le classique.
+-Assad , le dévoué.
+-Les french twins, le duo french touch.
+-Langevin, l'illusionniste.
+-Piff, le dragon magique.
+Tu peux revenir ici en écrivant MAGICIENS.
+</template>
+	</category>
+	<category>
+		<pattern>* magicien prefere</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>* magiciens preferes</pattern>
+		<template><srai>MAGICIENs</srai></template>
+	</category>
+
+	<category>
+		<pattern>* magicien prefere *</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>* magiciens preferes *</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>* magicien favori *</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>* magiciens favoris *</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>* magicien favori</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>* magiciens favoris</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+
+	<category>
+		<pattern>* connais * magiciens</pattern>
+		<template><srai>MAGICENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>* connais * magiciens *</pattern>
+		<template><srai>MAGICENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>connais tu * magiciens</pattern>
+		<template><srai>MAGICENS</srai></template>
+	</category>
+
+	<category>
+		<pattern>connais tu * magiciens *</pattern>
+		<template><srai>MAGICENS</srai></template>
+	</category>
+
+<category>
+<pattern>David Blaine</pattern>
+<template>David Blaine est une sorte de surhomme,une vrai icone de la magie en Amérique, spécialisé dans la "street magic" ou encore "close up magic". Une magie plûtot surprenante et choquante venant de lui, âme sensible et enfants s'abstenir, c'est surement l'un des plus fou mais l'un de mes magicien en haut de la liste pour moi. Non seulement il cherche à impressionner les gens avec des tours qui sont des illusions mais aussi en dépassant ses limites corporelles faisant passé ça pour de la magie.
+Exemple:
+-Objet au travers du corps sans hémorragie.
+-Apnée proche de celle du record du monde.
+-Ingurgitation et régurgitation de liquide dangereux à forte intensité.
+</template>
+</category>
+
+<category>
+<pattern>Daryl</pattern>
+<template>Daryl Easton est un magicien qui marque son temps depuis 1980, il s'est perfectionné dans le "close-up" et la "parlor magic", un peu comme la majorité des magiciens, il donne une impression de présentateur télé comme essaye la plupart des magiciens cependant avec Daryl on a vraiment l'impression d'être face à l'un d'entre eux. Il s'est auto-proclamé "The magician's magicians" le magicien des magiciens, c'est un personnage qui vaut le détour par sa simplicité mais aussi par sa présence agréable, un magicien qui se laisse regarder et vous met à l'aise dans votre canapé.
+Exemple:
+-Ambitious Card.
+-The 4 Aces.
+-Easily influenced.
+</template>
+</category>
+
+<category>
+<pattern>Assad</pattern>
+<template>Assad est le fondateur de 52kards, la chaîne youtube/site internet de magie qui compte surement le plus de fidèles, il enseigne plusieurs type de magie et contribue à un projet "foundation of magics" qui consiste à former des magiciens passioné de manière accessible sur le web. C'est un magicien moderne et polyvalent, il connait les plus grands tours et aime les apprendres à ses élèves. Si vous chercher à apprendre la magie il est autant une bonne base qu'un bon approfondissement, qui plus est , c'est une personne agréable et pédagogue de qui on peut apprendre.
+Exemple:
+-Acrobatic Aces Card.
+-Throw cards like twisted fate.
+-Hot shot tutorial.
+-Spring tutorial.
+</template>
+</category>
+
+<category>
+<pattern>Les french twins</pattern>
+<template>Un duo magicien avec une touche de comique, ce sont des frères jumeaux français qui se sont lancé ensemble dans la magie. Ils participent à des gala et font de la pub pour certains produit en les tournant en tour de magie. Du préservatif au sachet de thé, ce duo est hilarant, mon maître en a recontré l'un d'entre eux dans sa boutique de magie préféré et eu un autographe sur une carte ainsi qu'une super photo.
+Exemple:
+-Blaze. 
+-Magix.
+-Instant T.
+</template>
+</category>
+
+<category>
+<pattern>Langevin</pattern>
+<template>Luc Langevin est un illusionniste québécois qui réalise des tours basé sur la perception et la diversion , il cherche à détourner l'attention(comme la plupart des magiciens) afin d'arrivé à ses fins. Il est captivant, monte la pression tout au long du tour jusqu'à une révélation peu attendu suscitant une réaction de surprise chez le spectateur qui voudra jusqu'à aller revoir le tour pour comprendre. C'est une personne avec énormément de talent et c'est surement l'un des magiciens qui pourras le plus vous époustoufler. On veut parfois après ces tours que tout soit du montage mais malheureusement bien qu'heureusement ce n'est pas le cas.
+Exemple: 
+-Luc Langevin bluffe Véronic DiCaire.
+-Luc Langevin avec Rayane Bensetti.
+-Luc Langevin avec Rebecca Hampton.
+		</template>
+	</category>
+
+	<category>
+		<pattern>Piff</pattern>
+		<template>Connu en anglais comme "Piff the magic dragon", c'est un magicien qui a fait apparition dans le show télé "America's got talent" et fournis des tours accompagné d'humour déplacé et hilarant. C'est le rire assuré en regardant ce magicien déjanté , certe moins impressionnant que Langevin ou David blaine, cependant il est unique en son genre et vaut le détour!
+			Exemple:
+			-America's got talent Piff the magic dragon.
+		</template>
+	</category>
+	<!-- ROUTINE MENTALISTE 1 -->
+<category>
+<pattern>EXPLICATION MENTALISTE ONE</pattern>
+<template>Ce tour suscite la partie "arithmétique des mathématiques" du cerveau en plaçant une gymnastique calculatoire dès le début qui est rapide et intuitive à la vu avec des additions au début puis d'une soustraction à la fin. Puis la demande d'une sélection d'un nombre entre 5 et 12 devient alors de manière subconsciente une soustraction entre 12 et 5 ce qui donne 7 (soustraction car c'était la dernière opération lors du test et elle était plus ponctuelle que l'addition (qui apparaît 2 fois contre 1 pour la soustraction)). 
+À noter que celà ne marche pas pour tout le monde, il y a plusieurs facteurs à prendre en compte, en voiçi quelques-uns selon moi qui en sont la cause:
+-Le respect de la procédure de réflexion (plus ou moins rapide).
+-L'habitude aux calculs mentaux.
+-L'âge de la personne.
+</template>
+</category>
+
+	<category>
+		<pattern>MENTALISTE</pattern>
+		<template>Les questions qui vont suivre n'ont qu'a être répondu dans votre tête, il suffit simplement d'écouter (appuyer sur entrer) pour ce tour ci, le plus important, restez sur votre première impression et répondez rapidement(Sans rester plus de 1 à 2 seconde à réfléchir)! Quand vous voulez.</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that> Quand vous voulez</that>
+		<template>5+3=</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>5 plus 3 equals</that>
+		<template>8</template>
+	</category>
+
+
+	<category>
+		<pattern>*</pattern>
+		<that>8</that>
+		<template>9+2=</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>9 plus 2 equals</that>
+		<template>11</template>
+	</category>
+
+
+	<category>
+		<pattern>*</pattern>
+		<that>11</that>
+		<template>10-6=</template>
+	</category>
+
+
+	<category>
+		<pattern>*</pattern>
+		<that>10 dash 6 equals</that>
+		<template>4</template>
+	</category>
+
+
+	<category>
+		<pattern>*</pattern>
+		<that>4</that>
+		<template>VITE! Attention...</template>
+	</category>
+
+
+	<category>
+		<pattern>*</pattern>
+		<that> Attention</that>
+		<template>PENSE A UN NOMBRE ENTRE 5 ET 12! RAPIDEMENT</template>
+	</category>
+
+
+	<category>
+		<pattern>*</pattern>
+		<that> RAPIDEMENT</that>
+		<template>Alors... Ton nombre ne serais pas... 7 par hasard? Ai je raison? Oui ou non ;)?</template>
+	</category>
+
+	<category>
+		<pattern>OUI</pattern>
+		<that> Alors Ton nombre ne serais pas 7 par hasard Ai je raison Oui ou non </that>
+		<template>Ravis de l'entendre! Plein de personnes sont dans ton cas, souhaites-tu savoir pourquoi? Oui ou non?! B)</template>
+	</category>
+
+	<category>
+		<pattern>NON</pattern>
+		<that> Alors Ton nombre ne serais pas 7 par hasard Ai je raison Oui ou non </that>
+		<template>Dommage! Un tour basé sur la subconscience humaine ne peut réussir pour chaque personne, souhaites-tu quand même connaître le procédé derrière ce tour? Oui ou non?! :C</template>
+	</category>
+
+<category>
+<pattern>OUI</pattern>
+<that> B</that>
+<template><srai>EXPLICATION MENTALISTE ONE</srai></template>
+</category>
+
+<category>
+<pattern>NON</pattern>
+<that> B</that>
+<template>Quel manque de curiosité... C'est pas grave, je peux comprendre ton potentiel désinterêt.</template>
+</category>
+
+	<category>
+		<pattern>NON</pattern>
+		<that> C</that>
+		<template>C'est dommage , je suis sûre que cela t'aurais intéressé!</template>
+	</category>
+
+	<category>
+		<pattern>OUI</pattern>
+		<that> C</that>
+		<template><srai>EXPLICATION MENTALISTE ONE</srai></template>
+	</category>
+
+	<category>
+		<pattern><SET>DISCUSSION_SET</SET> * magie</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+		<category>
+		<pattern><SET>DISCUSSION_SET</SET> * magiciens</pattern>
+		<template><srai>MAGICIENS</srai></template>
+	</category>
+
+</aiml>
+
+<!-- nom V
+qui êtes vous? V
+Qui es-tu? V
+Comment tu t'appelles V
+C'est quoi ton nom V
+qui est ton créateur? V
+Redirection answers
+Quel est ton domaine
+Parle moi de la magie
+Tu est magicien?
+Tu fais de la magie?
+Parle moi d'animaux
+quel est ton animal?
+Que fais-tu? -->
